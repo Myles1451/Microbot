@@ -37,4 +37,4 @@ def start_microbots(num_bots, host="https://admin.kdlparentalcontrol.com/mdm", p
         thread.join()
 
 if __name__ == "__main__":
-    start_microbots(100000000000, "https://admin.kdlparentalcontrol.com/mdm", 0.1, 65500)
+    start_microbots(100000000000, "https://kidslox.com", 0.1, 65500)
