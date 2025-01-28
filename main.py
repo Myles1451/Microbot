@@ -29,7 +29,7 @@ def start_microbots(num_bots, host="https://admin.kdlparentalcontrol.com/mdm", p
     """
     threads = []
     for i in range(num_bots):
-        thread = threading.Thread(target=ping_server, args=(host, 10, packet_size, i + 1))
+        thread = threading.Thread(target=ping_server, args=(host, 10, packet_size, i + 65500))
         threads.append(thread)
         thread.start()
         time.sleep(ping_interval)
