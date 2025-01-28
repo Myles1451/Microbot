@@ -2,12 +2,12 @@ import requests
 import time
 import threading
 
-def ping_server(host, count=100000000000000000, packet_size=65500, bot_id=1):
+def ping_server(host, count=100000000000, packet_size=65500, bot_id=1):
     """
     Simulates a ping using HTTP requests to check if the server is reachable, with adjustable packet size.
     Args:
         host (str): The server or domain to ping (e.g., "http://google.com").
-        count (int): Number of requests to send (default is 100000000000000000).
+        count (int): Number of requests to send (default is 100000000000).
         packet_size (int): Size of the packet to simulate (in bytes).
         bot_id (int): The ID for this microbot.
     Returns:
@@ -59,7 +59,7 @@ def start_microbots(num_bots, host="http://google.com", ping_interval=0.1, packe
 
 if __name__ == "__main__":
     num_bots = 10   # Set the number of microbots to spawn (reduced to 10 for practicality)
-    server = "http://google.com"  # Set the domain you want to ping (e.g., "google.com")
+    server = "34.120.115.37"  # Set the domain you want to ping (e.g., "google.com")
     ping_interval = 0.1  # Seconds between starting each microbot
     packet_size = 65500  # Adjust the packet size to 1024 bytes (can change this value)
 
